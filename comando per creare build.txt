@@ -1,0 +1,8 @@
+comando per creare build
+pyinstaller --noconfirm --onedir --windowed --hidden-import="PIL._tkinter_finder" --add-data "/home/progtto/.local/lib/python3.12/site-packages/customtkinter:customtkinter/" --add-data "assets:assets" --add-data "record.png:./" "main.py"
+
+raggiungere la cartella di build
+cd dist/main
+
+comando per renderlo eseguibile
+chmod +x main
